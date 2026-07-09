@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="bn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Separate Admin Panel</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f1f5f9;color:#0f172a}
+.layout{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+.sidebar{background:#0f172a;color:white;padding:24px}
+.sidebar h2{font-size:22px;margin-bottom:25px}
+.sidebar a{display:block;color:#cbd5e1;padding:13px;border-radius:10px;margin:7px 0;text-decoration:none}
+.sidebar a.active,.sidebar a:hover{background:#1e293b;color:white}
+.main{padding:28px}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+.btn{background:#2563eb;color:white;padding:11px 18px;border-radius:10px;text-decoration:none;font-weight:800}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:25px}
+.card{background:white;border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(15,23,42,.08)}
+.card b{font-size:30px;color:#2563eb}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+table{width:100%;border-collapse:collapse;background:white;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(15,23,42,.08)}
+th,td{padding:15px;text-align:left;border-bottom:1px solid #e2e8f0}
+.badge{background:#dcfce7;color:#166534;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:800}
+.warn{background:#fef3c7;color:#92400e}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:relative}.kpis,.grid{grid-template-columns:1fr}}
+</style>
+</head><body>
+<div class="layout">
+<aside class="sidebar"><h2>KAKABAU Admin</h2><a class="active">Dashboard</a><a>Users</a><a>Vendors</a><a>Orders</a><a>Rental</a><a>Payments</a><a>Reports</a><a>Coupons</a><a>Banners</a><a>Settings</a></aside>
+<main class="main">
+<div class="top"><div><h1>Admin Dashboard</h1><p>Separate Web Admin Panel — Android app-এ admin দেখাবে না</p></div><a class="btn">Admin Login</a></div>
+<div class="kpis">
+<div class="card"><b>2,450</b><p>Total Users</p></div><div class="card"><b>320</b><p>Vendors</p></div><div class="card"><b>1,180</b><p>Orders</p></div><div class="card"><b>₹8.5L</b><p>Total Payment</p></div>
+</div>
+<div class="grid">
+<div><h2>Pending Vendors</h2><br><table><tr><th>Vendor</th><th>City</th><th>Status</th></tr><tr><td>ABC Education</td><td>Dumka</td><td><span class="badge warn">Pending</span></td></tr><tr><td>Rental Partner</td><td>Ranchi</td><td><span class="badge">Approved</span></td></tr></table></div>
+<div><h2>Recent Orders</h2><br><table><tr><th>Order</th><th>Amount</th><th>Status</th></tr><tr><td>Car Rental</td><td>₹1,499</td><td><span class="badge">Paid</span></td></tr><tr><td>Online Tutor</td><td>₹999</td><td><span class="badge warn">Pending</span></td></tr></table></div>
+</div>
+</main></div></body></html>
