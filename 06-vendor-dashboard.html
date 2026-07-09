@@ -1,0 +1,34 @@
+<!DOCTYPE html><html lang="bn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vendor Dashboard</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#e5e7eb;color:#111827}
+a{text-decoration:none;color:inherit}
+.phone{width:390px;max-width:96%;margin:25px auto;background:#f8fafc;min-height:760px;border-radius:28px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.25);border:8px solid #111827}
+.top{background:linear-gradient(135deg,#2563eb,#7c3aed);color:white;padding:24px 20px 30px;border-bottom-left-radius:28px;border-bottom-right-radius:28px}
+.top h1{font-size:25px;margin-bottom:6px}.top p{opacity:.9}
+.search{background:#fff;border-radius:16px;padding:13px;margin-top:18px;color:#64748b}
+.content{padding:18px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{background:#fff;border-radius:18px;padding:16px;box-shadow:0 8px 20px rgba(15,23,42,.08);margin-bottom:14px}
+.icon{font-size:30px;margin-bottom:8px}
+.btn{display:block;text-align:center;background:#2563eb;color:white;padding:13px;border-radius:14px;font-weight:800;margin-top:12px}
+.btn.orange{background:#f97316}.btn.dark{background:#111827}
+.input{width:100%;padding:13px;border:1px solid #d1d5db;border-radius:12px;margin:8px 0 13px}
+.nav{position:sticky;bottom:0;background:white;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:10px;border-top:1px solid #e5e7eb}
+.nav a{text-align:center;font-size:12px;color:#475569}.nav b{display:block;font-size:20px}
+.badge{display:inline-block;background:#dcfce7;color:#166534;padding:5px 10px;border-radius:999px;font-size:12px;font-weight:800}
+.list{background:#fff;border-radius:18px;padding:14px;margin-bottom:12px;box-shadow:0 8px 20px rgba(0,0,0,.06)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.small{color:#64748b;font-size:14px}
+</style>
+</head><body><div class="phone">
+<div class="top"><h1>Vendor Dashboard</h1><p>Manage services & orders</p></div>
+<div class="content">
+<div class="grid">
+<a class="card" href="07-add-service.html"><div class="icon">➕</div><b>Add Service</b></a>
+<a class="card" href="08-add-vehicle.html"><div class="icon">🚗</div><b>Add Vehicle</b></a>
+<div class="card"><div class="icon">📦</div><b>Orders</b><p class="small">12 active</p></div>
+<div class="card"><div class="icon">💰</div><b>Earnings</b><p class="small">₹18,450</p></div>
+</div>
+</div><div class="nav"><a href="06-vendor-dashboard.html"><b>🏠</b>Home</a><a><b>📦</b>Orders</a><a><b>💰</b>Earn</a><a><b>👤</b>Profile</a></div>
+</div></body></html>
